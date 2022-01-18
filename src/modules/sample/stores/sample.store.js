@@ -22,7 +22,7 @@ export const getSampleData =  async function (url){
     error.set(null);
     try {
         const response = await fetch(url);
-        this.anotherData.set(await response.json())
+        sampleData.set(await response.json())
     } catch (e) {
         error.set(e)
     }

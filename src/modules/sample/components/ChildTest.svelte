@@ -11,7 +11,8 @@
 </script>
 
 <div>
-    {JSON.stringify(dataMap, null, 2)}
+    from child
+    <pre>{JSON.stringify(dataMap, null, 2)}</pre>
 </div>
 
 <!--{#if $loading}-->
