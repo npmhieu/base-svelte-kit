@@ -17,7 +17,7 @@ export const updatePartial =  async function (values){
     });
 };
 
-export const getAnotherData =  async function (url){
+export const getSampleData =  async function (url){
     loading.set(true);
     error.set(null);
     try {

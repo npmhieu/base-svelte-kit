@@ -11,7 +11,7 @@
 </script>
 
 <div>
-    {dataMap}
+    {JSON.stringify(dataMap, null, 2)}
 </div>
 
 <!--{#if $loading}-->

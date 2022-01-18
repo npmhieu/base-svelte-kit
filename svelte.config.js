@@ -41,7 +41,10 @@ const config = {
 					'@core': path.resolve('./src/core'),
 					'@stores': path.resolve('./src/stores'),
 					'@styles': path.resolve('./src/styles'),
-					'@utils': path.resolve('./src/utils')
+					'@utils': path.resolve('./src/utils'),
+					// module
+					'@modules': path.resolve('./src/modules'),
+					'@sample': path.resolve('./src/modules/sample')
 				}
 			}
 		})
