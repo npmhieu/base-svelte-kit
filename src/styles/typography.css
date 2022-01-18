@@ -1,0 +1,18 @@
+.text-low-dark {
+    color: var(--color-dark-low);
+}
+.text-xxs {
+    font-size: 10px;
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-blue-darker {
+    color: var(--color-blue-darker);
+}
+
+.text-brown {
+    color: var(--color-brown);
+}

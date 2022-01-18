@@ -1,0 +1,41 @@
+@import "reset";
+@import "ui-components";
+@import "general";
+@import "typography.css";
+@import "iconsax";
+
+:root {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  --font-mono: 'Montserrat', monospace;
+  --header-hight: 80px;
+  --container-width: 1280px;
+  --container-padding-x: 18px;
+
+  // Color
+
+  --color-blue: #1f8efa;
+  --color-blue-darker: #006fd6;
+  --color-brown: #a7681b;
+  --color-brown-rgb: 167, 104, 27;
+  --color-disabled: #888;
+  --color-dark: #2f2f2f;
+  --color-text-default: #4e4e4e;
+  --color-dark-low: #a9a9a9;
+  --color-dark-dim: #e7e7e7;
+  --color-green: #4CAF50;
+  --color-orange: #fda734;
+
+  // Typography
+  --modal-header-text-size: 1.3rem;
+
+  // button
+  --button-height: 36px;
+
+  --box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+
+  --border-radius: 7px;
+}
+
+//body {
+//  font-size: 14px;
+//}
