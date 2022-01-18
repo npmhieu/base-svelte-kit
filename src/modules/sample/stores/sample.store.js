@@ -3,32 +3,29 @@
 
 import {writable} from 'svelte/store'
 
-export default {
-    loading: writable(false),
-    error: writable(false),
-    sampleData: writable(null),
+export const loading = writable(false);
+export const error = writable(null);
+export const sampleData = writable(null);
 
-    updateData(obj) {
-        this.sampleData.set(obj);
-    },
+export const updateData =  async function (obj){
+    sampleData.set(obj)
+};
 
-    updatePartial(values) {
+export const updatePartial =  async function (values){
+    sampleData.update(props => {
+        return {...props, ...values};
+    });
+};
 
-        this.sampleData.update(props => {
-            return {...props, ...values};
-        });
-    },
-    
-    async getAnotherData(url) {
-
-        this.loading.set(true)
-        this.error.set(false)
-        try {
-            const response = await fetch(url);
-            this.sampleData.set(await response.json())
-        } catch (e) {
-            this.error.set(e)
-        }
-        this.loading.set(false)
+export const getAnotherData =  async function (url){
+    loading.set(true);
+    error.set(null);
+    try {
+        const response = await fetch(url);
+        this.anotherData.set(await response.json())
+    } catch (e) {
+        error.set(e)
     }
-}
+    loading.set(false)
+};
+
